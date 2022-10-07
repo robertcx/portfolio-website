@@ -11,7 +11,7 @@ body::-webkit-scrollbar {
 
 .navbar {
   font-size: 1.6em;
-  overflow-x: auto;
+  height: 4em;
 }
 
 .nav-link {
