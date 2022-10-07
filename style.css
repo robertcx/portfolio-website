@@ -15,7 +15,15 @@ body::-webkit-scrollbar {
 }
 
 .nav-link {
-  color: white;
+  color: white!important;
+}
+
+.nav-link:hover {
+  color: #a6dde8!important;
+}
+
+.nav-link:active {
+  color: #0B7485!important;
 }
 
 .nav-item {
@@ -50,6 +58,10 @@ body::-webkit-scrollbar {
   background-color: rgba(0, 0, 0, 0);
   color: #FFF;
   border: 2px solid #FFF;
+}
+
+.btn:active {
+  opacity: 0.6;
 }
 
 .content {
