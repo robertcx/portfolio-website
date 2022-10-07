@@ -1,0 +1,50 @@
+html,
+body {
+  font-family: 'Arial', sans-serif;
+  color: #fff;
+  background: #111111;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.navbar {
+  font-size: 1.6em;
+  overflow-x: auto;
+}
+
+.nav-link {
+  color: white;
+}
+
+.nav-item {
+  padding-right: 2em;
+}
+
+.nav-item:last-child {
+  padding-right: 0;
+}
+
+.hero {
+  height: 600px;
+  background-color: #111111;
+}
+
+.hero h1 {
+  font-size: 6em;
+}
+
+.btn {
+  background-color: #FFF;
+  color: #000;
+  border: 1px solid white;
+  margin-top: 1em;
+  padding: 1em;
+}
+
+.btn:hover {
+  background-color: rgba(0, 0, 0, 0);
+  color: #FFF;
+  border: 1px solid #FFF;
+}
