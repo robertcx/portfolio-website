@@ -27,8 +27,11 @@ body::-webkit-scrollbar {
 }
 
 .hero {
-  height: 600px;
+  height: 100vh;
   background-color: #111111;
+  background-image: url('assets/images/hero-wallpaper.jpg');
+  background-size: cover;
+  background-blend-mode:soft-light;
 }
 
 .hero h1 {
@@ -38,7 +41,7 @@ body::-webkit-scrollbar {
 .btn {
   background-color: #FFF;
   color: #000;
-  border: 1px solid white;
+  border: 2px solid white;
   margin-top: 1em;
   padding: 1em;
 }
@@ -46,5 +49,10 @@ body::-webkit-scrollbar {
 .btn:hover {
   background-color: rgba(0, 0, 0, 0);
   color: #FFF;
-  border: 1px solid #FFF;
+  border: 2px solid #FFF;
+}
+
+.content {
+  height: 200px;
+  background-color: #212121;
 }
