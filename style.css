@@ -1,6 +1,6 @@
 html,
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: #fff;
   background: #111111;
 }
@@ -9,13 +9,40 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+.autohide {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1030;
+}
+
 .navbar {
   font-size: 1.6em;
-  overflow-x: auto;
+  height: 4em;
+}
+
+.scrolled-up {
+  transform: translateY(0);
+  transition: all 300ms ease;
+}
+
+.scrolled-down {
+  transform: translateY(-100%);
+  transition: all 300ms ease;
 }
 
 .nav-link {
-  color: white;
+  color: white !important;
+}
+
+.nav-link:hover {
+  color: #a6dde8 !important;
+}
+
+.nav-link:active {
+  color: #0b7485 !important;
 }
 
 .nav-item {
@@ -27,8 +54,11 @@ body::-webkit-scrollbar {
 }
 
 .hero {
-  height: 600px;
+  height: 100vh;
   background-color: #111111;
+  background-image: url('assets/images/hero-wallpaper.jpg');
+  background-size: cover;
+  background-blend-mode: soft-light;
 }
 
 .hero h1 {
@@ -36,15 +66,24 @@ body::-webkit-scrollbar {
 }
 
 .btn {
-  background-color: #FFF;
-  color: #000;
-  border: 1px solid white;
+  background-color: rgba(0, 0, 0, 0);
+  color: #fff;
+  border: 2px solid #fff;
   margin-top: 1em;
   padding: 1em;
 }
 
 .btn:hover {
-  background-color: rgba(0, 0, 0, 0);
-  color: #FFF;
-  border: 1px solid #FFF;
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #fff;
+}
+
+.btn:active {
+  opacity: 0.6;
+}
+
+.content {
+  height: 200px;
+  background-color: #212121;
 }
