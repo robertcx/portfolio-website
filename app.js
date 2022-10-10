@@ -22,12 +22,11 @@ document.addEventListener("DOMContentLoaded", function(){
     var last_scroll_top = 0;
     window.addEventListener('scroll', function() {
       let scroll_top = window.scrollY;
-      console.log(scroll_top);
+
       if(window.scrollY > 100) {
         $('.navbar').css('background', 'rgba(10,10,10,1)');
+
         if(scroll_top < last_scroll_top) {
-          console.log("scrolltop" + scroll_top);
-          console.log("lastscroll" + last_scroll_top);
             el_autohide.classList.remove('scrolled-down');
             el_autohide.classList.add('scrolled-up');
         }
@@ -35,11 +34,14 @@ document.addEventListener("DOMContentLoaded", function(){
             el_autohide.classList.remove('scrolled-up');
             el_autohide.classList.add('scrolled-down');
         }
+
         last_scroll_top = scroll_top;
+
       }
       else {
-        $('.navbar').css('background', 'rgba(10,10,10,0)');
+        $('.navbar').css('background', 'rgba(0,0,0,0)');
       }
+
     }); 
   }
 
