@@ -9,6 +9,13 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+/*##### Bootstrap #####*/
+
+.container-lg {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
 /*##### Navbar #####*/
 
 .autohide {
@@ -89,12 +96,12 @@ body::-webkit-scrollbar {
   opacity: 0.6;
 }
 
-.content {
-  height: 200px;
-  background-color: #212121;
+.content--dark {
+  height: 30vh;
+  background-color: #111111;
 }
 
-.container {
-  padding-left: 80px;
-  padding-right: 80px;
+.content--light {
+  height: 30vh;
+  background-color: #161616;
 }

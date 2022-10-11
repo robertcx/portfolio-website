@@ -1,17 +1,3 @@
-/*$(document).scroll(function() {
-  var navbarHeight = $('.navbar').height();
-  var alpha = (($(this).scrollTop() / navbarHeight ) / 10);
-
-  if (alpha>0.4) {
-    $('.navbar').css('background', 'rgba(10,10,10,1)');
-  }
-  else  {
-    $('.navbar').css('background', 'rgba(10,10,10,' + (alpha * 2)  + ')');
-  //  $('.navbar').css('border-bottom', '1px solid rgba(75,75,75,' + (alpha * 10) + ')');
-  }
-});
-
-*/
 document.addEventListener('DOMContentLoaded', function () {
   el_autohide = document.querySelector('.autohide');
 
