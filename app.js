@@ -2,10 +2,7 @@ $(document).scroll(function () {
   var navbarHeight = $('.navbar').height();
   var alpha = $(this).scrollTop() / navbarHeight / 10;
   if (alpha > 0.4) {
-    $('.navbar').css(
-      'background-image',
-      'linear-gradient(to bottom, rgba(10,10,10,1), rgba(0,0,0,0)'
-    );
+    $('.navbar').css('background-color: rgba(10,10,10,10)');
   } else {
     $('.navbar').css(
       'background-image',
